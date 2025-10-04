@@ -1,0 +1,32 @@
+class ProcesoCPU extends Proceso {
+    public ProcesoCPU(int pid, String nombre) {
+        super(pid, nombre);
+    }
+    
+    @Override
+    public void ejecutar() {
+        System.out.println("🔄 PID " + getPid() + " - " + getNombre() + ": Realizando cálculos intensivos...");
+    }
+}
+
+class ProcesoIO extends Proceso {
+    public ProcesoIO(int pid, String nombre) {
+        super(pid, nombre);
+    }
+    
+    @Override
+    public void ejecutar() {
+        System.out.println("⏳ PID " + getPid() + " - " + getNombre() + ": Esperando entrada/salida...");
+    }
+}
+
+class ProcesoDaemon extends Proceso {
+    public ProcesoDaemon(int pid, String nombre) {
+        super(pid, nombre);
+    }
+    
+    @Override
+    public void ejecutar() {
+        System.out.println("👁 PID " + getPid() + " - " + getNombre() + ": Monitoreando en segundo plano...");
+    }
+}
