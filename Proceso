@@ -1,0 +1,16 @@
+abstract class Proceso {
+    private int pid;
+    private String nombre;
+    
+    public Proceso(int pid, String nombre) {
+        this.pid = pid;
+        this.nombre = nombre;
+    }
+    
+    // GETTERS
+    public int getPid() { return pid; }
+    public String getNombre() { return nombre; }
+    
+    // MÉTODO ABSTRACTO - cada hijo lo implementa diferente
+    public abstract void ejecutar();
+}
