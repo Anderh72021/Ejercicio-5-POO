@@ -1,0 +1,19 @@
+public class Main {
+    public static void main(String[] args) {
+        Planificador planificador = new Planificador();
+        
+       
+        Proceso photoshop = new ProcesoCPU(1, "Photoshop");
+        Proceso word = new ProcesoIO(2, "Microsoft Word");
+        Proceso antivirus = new ProcesoDaemon(3, "Antivirus");
+        Proceso chrome = new ProcesoCPU(4, "Google Chrome");
+        
+     
+        planificador.agregarProceso(photoshop);
+        planificador.agregarProceso(word);
+        planificador.agregarProceso(antivirus);
+        planificador.agregarProceso(chrome);
+        
+        planificador.ejecutarTodos();
+    }
+}
