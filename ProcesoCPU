@@ -5,7 +5,7 @@ class ProcesoCPU extends Proceso {
     
     @Override
     public void ejecutar() {
-        System.out.println("🔄 PID " + getPid() + " - " + getNombre() + ": Realizando cálculos intensivos...");
+        System.out.println(" PID " + getPid() + " - " + getNombre() + ": Realizando cálculos intensivos");
     }
 }
 
@@ -16,7 +16,7 @@ class ProcesoIO extends Proceso {
     
     @Override
     public void ejecutar() {
-        System.out.println("⏳ PID " + getPid() + " - " + getNombre() + ": Esperando entrada/salida...");
+        System.out.println("⏳ PID " + getPid() + " - " + getNombre() + ": Esperando entrada/salida");
     }
 }
 
