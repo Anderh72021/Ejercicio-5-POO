@@ -9,9 +9,9 @@ class Planificador {
     }
     
     public void ejecutarTodos() {
-        System.out.println("🎯 Ejecutando todos los procesos:");
+        System.out.println(" Se estna ejecutando todos los procesos:");
         for (Proceso proceso : procesos) {
-            proceso.ejecutar();  // ¡POLIMORFISMO!
+            proceso.ejecutar(); 
         }
     }
 }
