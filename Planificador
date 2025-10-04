@@ -1,0 +1,17 @@
+import java.util.ArrayList;
+import java.util.List;
+
+class Planificador {
+    private List<Proceso> procesos = new ArrayList<>();
+    
+    public void agregarProceso(Proceso proceso) {
+        procesos.add(proceso);
+    }
+    
+    public void ejecutarTodos() {
+        System.out.println("🎯 Ejecutando todos los procesos:");
+        for (Proceso proceso : procesos) {
+            proceso.ejecutar();  // ¡POLIMORFISMO!
+        }
+    }
+}
